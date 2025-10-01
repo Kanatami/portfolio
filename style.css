@@ -1,0 +1,129 @@
+/* =========================
+   カラーテーマ（藍色）
+========================= */
+:root {
+    --bg-color: #f5f5f5;          /* 背景色（薄いグレー） */
+    --primary-color: #264653;     /* メインカラー（藍色） */
+    --text-color: #333;           /* 基本文字色 */
+    --card-bg: #ffffff;           /* カード背景 */
+}
+
+/* =========================
+   全体共通
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   ナビゲーションバー（固定）
+========================= */
+nav {
+    position: sticky;
+    top: 0;
+    background: var(--primary-color);
+    padding: 12px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   ヘッダー（トップ/プロフィール）
+========================= */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--primary-color);
+    color: white;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   カード型セクション
+========================= */
+.page-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   /* ← ふんわり影付き */
+}
+
+/* =========================
+   見出しスタイル
+========================= */
+.card h1, .card h2 {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 8px;
+    margin-top: 0;
+}
+
+/* =========================
+   リンク / ボタン
+========================= */
+a, a:visited {
+    color: var(--primary-color);
+}
+
+.navbar a {
+    color: #fff;
+    font-weight: 700;
+}
+.navbar a:hover {
+    opacity: .85;
+}
+
+.button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   フッター
+========================= */
+footer {
+    background: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
