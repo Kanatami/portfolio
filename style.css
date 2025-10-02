@@ -1,16 +1,12 @@
-/* =========================
-   カラーテーマ（藍色）
-========================= */
 :root {
-    --bg-color: #f5f5f5;          /* 背景色（薄いグレー） */
-    --primary-color: #264653;     /* メインカラー（藍色） */
-    --text-color: #333;           /* 基本文字色 */
-    --card-bg: #ffffff;           /* カード背景 */
+    --bg-color: #f5f5f5;          
+    --primary-color: #264653;     
+    --text-color: #333;          
+    --card-bg: #ffffff;          
 }
 
-/* =========================
-   全体共通
-========================= */
+
+/* 共通デザイン */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,9 +17,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* =========================
-   ナビゲーションバー（固定）
-========================= */
+/* ナビゲーション */
 nav {
     position: sticky;
     top: 0;
@@ -44,9 +38,7 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* =========================
-   ヘッダー（トップ/プロフィール）
-========================= */
+
 header {
     text-align: center;
     padding: 60px 20px;
@@ -62,58 +54,53 @@ header {
     margin-bottom: 15px;
 }
 
-/* =========================
-   カード型セクション
-========================= */
+
 .page-content {
     max-width: 800px;
     margin: auto;
     padding: 20px;
 }
 
-/* ====== Neumorphism カード ====== */
+/* Neumorphism design */
 .card {
-  background: var(--bg-color);  /* 背景と近い色 */
+  background: var(--bg-color);  
   border-radius: 18px;
   padding: 28px;
   margin: 26px 0;
   box-shadow:
-    10px 10px 20px rgba(0,0,0,0.2),   /* 右下の濃い影 */
-    -10px -10px 20px rgba(255,255,255,0.7); /* 左上の明るい影 */
+    10px 10px 20px rgba(0,0,0,0.2),   
+    -10px -10px 20px rgba(255,255,255,0.7); 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* ====== 選択（hover）した時 ====== */
+/* hover */
 .card:hover {
-  transform: translateY(-6px); /* 少し持ち上げる */
+  transform: translateY(-6px);
   box-shadow:
     14px 14px 28px rgba(0,0,0,0.25),
     -14px -14px 28px rgba(255,255,255,0.8);
 }
 
-/* ====== 選択中（クリック時 / active状態） ====== */
+/* active */
 .card:active {
   transform: translateY(0);
   box-shadow:
-    inset 8px 8px 16px rgba(0,0,0,0.2),   /* 凹んだ影 */
+    inset 8px 8px 16px rgba(0,0,0,0.2),
     inset -8px -8px 16px rgba(255,255,255,0.7);
 }
 
 
 
 
-/* =========================
-   見出しスタイル
-========================= */
+/* 見出し */
 .card h1, .card h2 {
     border-left: 4px solid var(--primary-color);
     padding-left: 8px;
     margin-top: 0;
 }
 
-/* =========================
-   リンク / ボタン
-========================= */
+
+
 a, a:visited {
     color: var(--primary-color);
 }
@@ -141,12 +128,25 @@ a, a:visited {
     opacity: 0.9;
 }
 
-/* =========================
-   フッター
-========================= */
+
+
 footer {
     background: #ddd;
     text-align: center;
     padding: 10px;
     margin-top: 40px;
 }
+
+
+.jindaiji-photo {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin: 16px auto;
+    display: block;
+    box-shadow:
+        8px 8px 16px rgba(0,0,0,0.2),
+        -8px -8px 16px rgba(255,255,255,0.7);
+}
+
+
